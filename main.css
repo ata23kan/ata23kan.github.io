@@ -19,3 +19,55 @@
 .content-section-b {
     background-color: #eee;
 }
+
+.figures-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.centered-figure {
+  margin: 0 auto;
+  width: 600px; 
+}
+
+.centered-figure::after {
+  content: "";
+  display: block;
+  height: 20px;
+}
+
+.footer {
+  background-color: black;
+  color: #f3f3f3;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;       
+}
+
+.footer a {
+  color: #f3f3f3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
+.footer i {
+  font-size: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Optional: Style the paragraph in the footer */
+.footer p {
+  display: inline;
+  font-size: 16px;
+  vertical-align: middle;
+  margin: 0;
+}
+
+

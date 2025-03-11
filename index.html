@@ -19,30 +19,6 @@
 
 <body>
 
-<!--   <nav class="navbar navbar-default" role="navigation">
-        <div class="container topnav">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#my-navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">{Your Name Here!}</a>
-            </div>
-            <div class="collapse navbar-collapse" id="my-navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#projects">My Projects</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
- -->
-
 	<!-- Navigation -->
    <nav class="navbar navbar-inverse">
     <div class="container">
@@ -70,38 +46,46 @@
   	<div class="col-md-offset-0" class="col-md-6" style="font-family: 'Calibri' sans-serif; font-size: 18px;">
   		<p>I am a PhD candidate in <a href="https://blog.metu.edu.tr/akarakus/">Accelerated Multiphysics Research Group</a> and a research assistant at Middle East Technical University. My current focus is developing discontinuous Galerkin solutions for moving boundary problems accelerated on GPUs. Additionally, I am trying to combine data-driven methods with high fidelity solutions to increase efficiency. My Masters work focuses on using physics-informed neural networks for computational fluid dynamics.</p>
 
-        <p>Currently working on arbitrary Lagrangian-Eulerian discontinuous Galerkin solutions on GPU.</p>
+        <p>Currently working on arbitrary Lagrangian-Eulerian discontinuous Galerkin solutions on GPUs.</p>
       <br>
 
         <h2><u>Research Highlights</u></h2>
       </br>
 
-      <p class="aligncenter">
-        <figure>
-        <img class="img-responsive" src="levelSet.png" width="600" class="center">
+    <!-- Wrap the two figures in a flex container -->
+    <div class="figures-container">
+        <figure style="flex:1; margin:0;">
+            <img class="img-responsive" src="bump.gif" style="width:100%;" alt="Advection of a Gaussian bump">
+            <figcaption>Advection of a Gaussian bump in a moving domain.</figcaption>
+        </figure>
+        <figure style="flex:1; margin:0;">
+            <img class="img-responsive" src="bumpMesh.gif" style="width:100%;" alt="Moving mesh Advection">
+            <figcaption>Movement of mesh using continuous finite elements, solved with linear elastic equations.</figcaption>
+        </figure>
+    </div>
+
+    <figure class="centered-figure">
+        <img class="img-responsive" src="levelSet.png" width="600">
         <figcaption>Solution to a level set equation. Discontinuous Galerkin solution with N=5.</figcaption>
-        </figure>
-      </p>
+    </figure>
 
-
-      <p class="aligncenter">
-        <figure>
-        <img class="img-responsive" src="wingLike.gif" width="600" class="center">
-        <figcaption>Mesh deformation with PINN using linear elastic equations.</figcaption>
-        </figure>
-      </p>
+    <figure class="centered-figure">
+    <img class="img-responsive" src="wingLike.gif" width="600" class="center">
+    <figcaption>Mesh deformation with PINN using linear elastic equations.</figcaption>
+    </figure>
 
   	</div>
   </div>
 
 
-<!--   <footer>
-    <div class="footer">
-      <strong>Follow: </strong>
-      <a href="https://github.com/ata23kan">GitHub</a>                
-    </div>
-  </footer>
- -->
+<footer class="footer">
+  <div class="container">
+    <a href="https://github.com/ata23kan" target="_blank">
+      <i class="fa fa-github"></i>
+    </a>
+    <p>Follow me on GitHub</p>
+  </div>
+</footer>
 
 <!-- /.container -->
     
