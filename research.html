@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the  Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,109 +8,103 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"> -->
-    <link rel="stylesheet" href="main.css"  type="text/css">
-</head>
-
-<body>
-
-    <!-- Navigation -->
- <nav class="navbar navbar-inverse">
-  <div class="container">
-    <ul class="nav navbar-nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="research.html">Research</a></li>
-      <li><a href="about.html">About</a></li> 
-    </ul>
-  </div>
-</nav>
-
-    <!-- Page Content -->
-
-  <div class="container">
-    <div class="col-md-offset-0" class="col-md-6" style="margin-bottom: 5vh; margin-top: 5vh;">
-      <center>
-        <div style="font-family: 'Calibri', sans-serif; font-size: 32px;">
-          <b>Research</b>
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+  <body>
+    <!-- Wrapper for all page content (excluding the footer) -->
+    <div class="wrapper">
+      <!-- Navigation -->
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
         </div>
-      </center>
-    </div>
-  </div>
+      </nav>
 
-  <div class="container">
+      <!-- Main Content -->
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" style="margin: 5vh 0;">
+              <center>
+                <div style="font-family: 'Calibri', sans-serif; font-size: 32px;">
+                  <b>Research</b>
+                </div>
+              </center>
+            </div>
+          </div>
+        </div>
 
-  <div class="row">
-      
-    <!-- Entries Column -->
-    <div class="col-md-8" style="height: 100vh; font-size: 18px;">
-      <div style="height: 100vh;">
+        <div class="container">
+          <div class="row">
+            <!-- Remove fixed height (100vh) so the content can grow naturally -->
+            <div class="col-md-8" style="font-size: 18px;">
+              <div>
+                <strong>Publications</strong>
+                <ol>
+                  <li class="paper">
+                    <b>Aygun A.</b>, Karakus A. (2024). Physics-Informed Neural Networks for Weakly Compressible Flows Using Galerkin-Boltzmann Formulation. <i>Physics of Fluids 36 (11)</i>, 117125. <a href="https://doi.org/10.1063/5.0235756">(Publisher)</a>  <a href="https://arxiv.org/abs/2409.05892/">(arXiv)</a>
+                  </li>
+                  <li class="paper">
+                      <b>Aygun A.</b>, Maulik R., Karakus A. (2023). Physics-Informed Neural Networks for Mesh Deformation Problems with Exact Boundary Enforcement. <i>Engineering Applications of Artificial Intelligence, 125</i>, 106660. <a href="https://www.sciencedirect.com/science/article/pii/S0952197623008448/">(Publisher)</a>, <a href="https://arxiv.org/abs/2301.05926/">(arXiv)</a>
+                  </li>
+                  <li class="paper">
+                      <b>Aygun A.</b>, Karakus A. (2022). Physics-Informed Neural Networks for Two Dimensional Incompressible Thermal Convection Problems. <i>Journal of Thermal Science and Technology, 42(2)</i>, 221-232. <a href="https://dergipark.org.tr/en/pub/isibted/issue/73436/1194992">(Publisher)</a>, <a href="https://arxiv.org/abs/2206.08658/">(arXiv)</a>
+                  </li>
+                </ol>
+                <strong>Conference Proceedings and Talks</strong>
+                <ol>
+                  <li class="paper">
+                    <b>Aygun A.</b> and Karakus A., 2025, Discontinuos Galerkin Solutions of Moving Boundary Problems Using Arbitrary Lagrangian-Eulerian Method on GPUs. <i>SIAM CSE25</i>, Fort Worth, Texas, USA.
+                  </li>
+                  <li class="paper">
+                      Tasdelen A.S., <b>Aygun A.</b> and Karakus A., 2023, Remin: A Physics-Informed Neural Network framework and its Application to Thermal Convection Problems. <i>24th Congress on Thermal Science and Technology</i>, Ankara, Turkey.
+                  </li>
+                  <li class="paper">
+                      <b>Aygun A.</b> and Karakus A., 2023, Physics-Informed Neural Networks for Mesh Deformation Problems with Exact Boundary Enforcement. <i>SIAM CSE23</i>, Amsterdam, The Netherlands.
+                  </li>
+                  <li class="paper">
+                      <b>Aygun A.</b> and Karakus A., 2022, Physics-Informed Neural Networks to Solve 1D Euler Equations, <i>National Conference of Aerospace</i>, Izmir, Turkey (Virtual).
+                  </li>
+                </ol>
+                <strong>Thesis</strong>
+                <ol>
+                  <li>
+                    2023 MSc Thesis: <a href="https://open.metu.edu.tr/handle/11511/102050">Physics-Informed Neural Networks for Computational Fluid Dynamics</a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End .content -->
+    </div><!-- End .wrapper -->
 
-        <strong>Publications</strong>
-        <ol>
-          <li class="paper">
-            <b>Aygun A.</b>, Karakus A. (2024). Physics-Informed Neural Networks for Weakly Compressible Flows Using Galerkin-Boltzmann Formulation. <i>Physics of Fluids 36 (11)</i>, 117125. <a href="https://doi.org/10.1063/5.0235756">(Publisher)</a>  <a href="https://arxiv.org/abs/2409.05892/">(arXiv)</a>
-          </li>
-          <li class="paper">
-              <b>Aygun A.</b>, Maulik R., Karakus A. (2023). Physics-Informed Neural Networks for Mesh Deformation Problems with Exact Boundary Enforcement. <i>Engineering Applications of Artificial Intelligence, 125</i>, 106660. <a href="https://www.sciencedirect.com/science/article/pii/S0952197623008448/">(Publisher)</a>, <a href="https://arxiv.org/abs/2301.05926/">(arXiv)</a>
-          </li>
-          <li class="paper">
-              <b>Aygun A.</b>, Karakus A. (2022). Physics-Informed Neural Networks for Two Dimensional Incompressible Thermal Convection Problems. <i>Journal of Thermal Science and Technology, 42(2)</i>, 221-232.<a href="https://dergipark.org.tr/en/pub/isibted/issue/73436/1194992">(Publisher)</a>, <a href="https://arxiv.org/abs/2206.08658/">(arXiv)</a>
-          </li>
-        </ol>
-
-        <strong>Conference Proceedings and Talks</strong>
-        <ol>
-          <li class="paper">
-            <b>Aygun A.</b> and Karakus A., 2025, Discontinuos Galerkin Solutions of Moving Boundary Problems Using Arbitrary Lagrangian-Eulerian Method on GPUs. <i>SIAM CSE25</i>, Fort Worth, Texas, USA.
-          </li>
-          <li class="paper">
-              Tasdelen A.S., <b>Aygun A.</b> and Karakus A., 2023, Remin: A Physics-Informed Neural Network framework and its Application to Thermal Convection Problems. <i>24th Congress on Thermal Science and Technology</i>, Ankara, Turkey.
-          </li>
-          <li class="paper">
-              <b>Aygun A.</b> and Karakus A., 2023, Physics-Informed Neural Networks for Mesh Deformation Problems with Exact Boundary Enforcement. <i>SIAM CSE23</i>, Amsterdam, The Netherlands.
-          </li>
-          <li class="paper">
-              <b>Aygun A.</b> and Karakus A, 2022, Physics-Informed Neural Networks to Solve 1D Euler Equations, <i>National Conference of Aerospace</i>, Izmir, Turkey (Virtual).
-          </li>
-        </ol>
-
-
-        <strong>Thesis</strong>
-        <ol>
-          <li>2023 MSc Thesis: <a href="https://open.metu.edu.tr/handle/11511/102050">Physics-Informed Neural Networks for Computational Fluid Dynamics</a></li>
-        </ol>
+    <!-- Footer (full-width) placed after the wrapper -->
+    <footer class="footer">
+      <div>
+        <a href="https://github.com/ata23kan" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/atakanaygun" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user=8frZpL8AAAAJ&hl=en" target="_blank">
+          <i class="fa fa-graduation-cap"></i>
+        </a>
+        <a href="https://me.metu.edu.tr/kisi/atakan-aygun" target="_blank">
+          <i class="fa-solid fa-briefcase"></i>
+        </a>
+        <a href="mailto:atakana@metu.edu.tr" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
       </div>
-    </div>
-  </div>
+    </footer>
 
-  </div>
-
-<footer class="footer">
-  <div class="container">
-    <a href="https://github.com/ata23kan" target="_blank">
-      <i class="fa-brands fa-github"></i>
-    </a>
-    <a href="https://linkedin.com/in/atakanaygun" target="_blank">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://scholar.google.com/citations?user=8frZpL8AAAAJ&hl=en" target="_blank">
-        <i class="fa fa-graduation-cap"></i>
-    </a>
-    <a href="https://me.metu.edu.tr/kisi/atakan-aygun" target="_blank">
-        <i class="fa-solid fa-briefcase"></i>
-    </a>
-    <a href="mailto:atakana@metu.edu.tr" target="_blank">
-        <i class="fa-solid fa-envelope"></i>
-    </a>
-  </div>
-</footer>
-
- <!-- /.container -->
-    
-  <!-- Other people may like it too! -->
-  <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
-
-
-</body>
-
-
+    <!-- Other link at the bottom -->
+    <a style="color:#b5bec9; font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>
+  </body>
 </html>

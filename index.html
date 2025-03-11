@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!--
-    Plain-Academic by Vasilios Mavroudis
-    Released under the  Simplified BSD License/FreeBSD (2-clause) License.
-    https://github.com/mavroudisv/plain-academic
--->
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,97 +8,96 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"> -->
-    <link rel="stylesheet" href="main.css"  type="text/css">
-</head>
+    <link rel="stylesheet" href="main.css" type="text/css">
 
-<body>
+  </head>
+  <body>
+    <!-- Wrapper for all page content -->
+    <div class="wrapper">
+      <!-- Navigation -->
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
 
-	<!-- Navigation -->
-   <nav class="navbar navbar-inverse">
-    <div class="container">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="research.html">Research</a></li> 
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </div>
-  </nav>
+      <!-- Main Content -->
+      <div class="content">
+        <!-- Page-specific content goes here -->
+        <!-- For example, for your first page: -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" style="margin: 5vh 0;">
+              <center>
+                <div style="font-family: 'Calibri', sans-serif; font-size: 32px;">
+                  <b>Atakan Aygun</b>
+                </div>
+              </center>
+            </div>
+          </div>
+        </div>
 
-  <!-- Page Content -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12" style="font-family: 'Calibri', sans-serif; font-size: 18px;">
+              <p>I am a PhD candidate in <a href="https://blog.metu.edu.tr/akarakus/">Accelerated Multiphysics Research Group</a> and a research assistant at Middle East Technical University. My current focus is developing discontinuous Galerkin solutions for moving boundary problems accelerated on GPUs. Additionally, I am trying to combine data-driven methods with high fidelity solutions to increase efficiency. My Masters work focuses on using physics-informed neural networks for computational fluid dynamics.</p>
 
-  <div class="container">
-  	<div class="col-md-offset-0" class="col-md-6" style="margin-bottom: 5vh; margin-top: 5vh;">
-  		<center>
-  			<div style="font-family: 'Calibri', sans-serif; font-size: 32px;">
-  				<b>Atakan Aygun</b>
-  			</div>
-  		</center>
-  	</div>
-  </div>
+              <p>Currently working on arbitrary Lagrangian-Eulerian discontinuous Galerkin solutions on GPUs.</p>
+              <br>
+              <h2><u>Research Highlights</u></h2>
+              <!-- Example figures block -->
+              <div class="figures-container">
+                <figure style="flex:1; margin:0;">
+                  <img class="img-responsive" src="bump.gif" alt="Advection of a Gaussian bump">
+                  <figcaption>Advection of a Gaussian bump in a moving domain.</figcaption>
+                </figure>
+                <figure style="flex:1; margin:0;">
+                  <img class="img-responsive" src="bumpMesh.gif" alt="Moving mesh Advection">
+                  <figcaption>Movement of mesh using continuous finite elements, solved with linear elastic equations.</figcaption>
+                </figure>
+              </div>
 
-  <div class="container">
-  	<div class="col-md-offset-0" class="col-md-6" style="font-family: 'Calibri' sans-serif; font-size: 18px;">
-  		<p>I am a PhD candidate in <a href="https://blog.metu.edu.tr/akarakus/">Accelerated Multiphysics Research Group</a> and a research assistant at Middle East Technical University. My current focus is developing discontinuous Galerkin solutions for moving boundary problems accelerated on GPUs. Additionally, I am trying to combine data-driven methods with high fidelity solutions to increase efficiency. My Masters work focuses on using physics-informed neural networks for computational fluid dynamics.</p>
+              <figure class="centered-figure">
+                <img class="img-responsive" src="levelSet.png" alt="Level set solution">
+                <figcaption>Solution to a level set equation. Discontinuous Galerkin solution with N=5.</figcaption>
+              </figure>
 
-        <p>Currently working on arbitrary Lagrangian-Eulerian discontinuous Galerkin solutions on GPUs.</p>
-      <br>
+              <figure class="centered-figure">
+                <img class="img-responsive" src="wingLike.gif" alt="Mesh deformation">
+                <figcaption>Mesh deformation with PINN using linear elastic equations.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End .content -->
+    </div> <!-- End .wrapper -->
 
-        <h2><u>Research Highlights</u></h2>
-      </br>
+    <!-- Footer (placed outside the wrapper for full-width background) -->
+    <footer class="footer">
+      <div class="inner-footer">
+        <a href="https://github.com/ata23kan" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/atakanaygun" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user=8frZpL8AAAAJ&hl=en" target="_blank">
+          <i class="fa fa-graduation-cap"></i>
+        </a>
+        <a href="https://me.metu.edu.tr/kisi/atakan-aygun" target="_blank">
+          <i class="fa-solid fa-briefcase"></i>
+        </a>
+        <a href="mailto:atakana@metu.edu.tr" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+    </footer>
 
-    <!-- Wrap the two figures in a flex container -->
-    <div class="figures-container">
-        <figure style="flex:1; margin:0;">
-            <img class="img-responsive" src="bump.gif" style="width:100%;" alt="Advection of a Gaussian bump">
-            <figcaption>Advection of a Gaussian bump in a moving domain.</figcaption>
-        </figure>
-        <figure style="flex:1; margin:0;">
-            <img class="img-responsive" src="bumpMesh.gif" style="width:100%;" alt="Moving mesh Advection">
-            <figcaption>Movement of mesh using continuous finite elements, solved with linear elastic equations.</figcaption>
-        </figure>
-    </div>
-
-    <figure class="centered-figure">
-        <img class="img-responsive" src="levelSet.png" width="600">
-        <figcaption>Solution to a level set equation. Discontinuous Galerkin solution with N=5.</figcaption>
-    </figure>
-
-    <figure class="centered-figure">
-    <img class="img-responsive" src="wingLike.gif" width="600" class="center">
-    <figcaption>Mesh deformation with PINN using linear elastic equations.</figcaption>
-    </figure>
-
-  	</div>
-  </div>
-
-
-<footer class="footer">
-  <div class="container">
-    <a href="https://github.com/ata23kan" target="_blank">
-      <i class="fa-brands fa-github"></i>
-    </a>
-    <a href="https://linkedin.com/in/atakanaygun" target="_blank">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://scholar.google.com/citations?user=8frZpL8AAAAJ&hl=en" target="_blank">
-        <i class="fa fa-graduation-cap"></i>
-    </a>
-    <a href="https://me.metu.edu.tr/kisi/atakan-aygun" target="_blank">
-        <i class="fa-solid fa-briefcase"></i>
-    </a>
-    <a href="mailto:atakana@metu.edu.tr" target="_blank">
-        <i class="fa-solid fa-envelope"></i>
-    </a>
-  </div>
-</footer>
-
-<!-- /.container -->
-    
-    <!-- Other people may like it too! -->
-    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
-
-
-</body>
-
-
+    <!-- Other link at the bottom -->
+    <a style="color:#b5bec9; font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a>
+  </body>
 </html>

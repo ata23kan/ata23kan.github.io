@@ -16,9 +16,33 @@
     color: #f3f3f3;
 }
 
+/* Make html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Wrapper that holds all content (except footer) */
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content area expands to push footer down */
+.content {
+  flex: 1;
+}
+
 .content-section-b {
     background-color: #eee;
 }
+
+figcaption {
+  font-size: 14px;
+  text-align: center;
+}
+
 
 .figures-container {
   display: flex;
@@ -28,14 +52,22 @@
 }
 
 .centered-figure {
+  width: 100%;
   margin: 0 auto;
-  width: 600px; 
+  max-width: 600px;
+
 }
 
 .centered-figure::after {
   content: "";
   display: block;
   height: 20px;
+}
+
+.left-figure {
+  margin: 0;  /* No auto margins, so it will default to left alignment */
+  width: 100%;
+  max-width: 600px;
 }
 
 .footer {
@@ -46,18 +78,15 @@
   margin-top: 40px;
   width: 100%;
 }
-
 .footer a {
   color: #f3f3f3;
   text-decoration: none;
   margin: 0 10px;
   transition: color 0.3s ease;
 }
-
 .footer a:hover {
   color: #ddd;
 }
-
 .footer i {
   font-size: 30px;
   vertical-align: middle;
@@ -68,5 +97,11 @@
   font-size: 16px;
   display: block;
 }
+
+/* Optional inner container removal if needed */
+.footer .inner-footer {
+  max-width: 100%;
+}
+
 
 
