@@ -43,12 +43,14 @@
   color: #f3f3f3;
   padding: 20px 0;
   text-align: center;
-  margin-top: 40px;       
+  margin-top: 40px;
+  width: 100%;
 }
 
 .footer a {
   color: #f3f3f3;
   text-decoration: none;
+  margin: 0 10px;
   transition: color 0.3s ease;
 }
 
@@ -58,16 +60,13 @@
 
 .footer i {
   font-size: 30px;
-  margin-right: 10px;
   vertical-align: middle;
 }
 
-/* Optional: Style the paragraph in the footer */
 .footer p {
-  display: inline;
+  margin: 10px 0 0;
   font-size: 16px;
-  vertical-align: middle;
-  margin: 0;
+  display: block;
 }
 
 
